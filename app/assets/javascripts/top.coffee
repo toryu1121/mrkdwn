@@ -29,6 +29,7 @@ class CoffeeAct extends CoffeeStory
     constructor: ->
         super
         this.story1()
+        this.story2()
 
 $ ->
     new CoffeeAct

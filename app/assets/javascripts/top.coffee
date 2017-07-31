@@ -50,14 +50,30 @@ class CoffeeStory extends CoffeeChap
                 hallohtml: {}
                 hallolink: {}
             toolbar: 'halloToolbarFixed'
+    
+    story5: ->
+        $('div#title').hallo()
+        
+        $('.edi').hallo
+            plugins:
+                halloformat: {}
+                halloblock: {}
+                hallojustify: {}
+                hallolists: {}
+                halloreundo: {}
+                hallohtml: {}
+                hallolink: {}
+            toolbar: 'halloToolbarFixed'
+
+        $('#text').hallo()
         
         
 
 class CoffeeAct extends CoffeeStory
     constructor: ->
         super
-        this.story1()
-        this.story4()
+        #this.story1()
+        this.story5()
 
 $ ->
     new CoffeeAct

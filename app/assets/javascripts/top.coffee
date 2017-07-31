@@ -24,12 +24,40 @@ class CoffeeStory extends CoffeeChap
                     hallohtml: {}
                     hallolink: {}
                 editable: true
+    
+    story3: ->
+        $('.editable').each ->
+            $(this).hallo
+                plugins:
+                    halloformat: {}
+                    halloblock: {}
+                    hallojustify: {}
+                    hallolists: {}
+                    halloreundo: {}
+                    hallohtml: {}
+                    hallolink: {}
+                toolbar: 'halloToolbarFixed'
+                editable: true
+    
+    story4: ->
+        $('.editable').hallo
+            plugins:
+                halloformat: {}
+                halloblock: {}
+                hallojustify: {}
+                hallolists: {}
+                halloreundo: {}
+                hallohtml: {}
+                hallolink: {}
+            toolbar: 'halloToolbarFixed'
+        
+        
 
 class CoffeeAct extends CoffeeStory
     constructor: ->
         super
         this.story1()
-        this.story2()
+        this.story4()
 
 $ ->
     new CoffeeAct

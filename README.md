@@ -5,3 +5,4 @@
 - controllerの作成
 - Coffeescriptのテスト
 - hallo js うまくいった
+- とりあえずjsいろいろいじったので

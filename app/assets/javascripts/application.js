@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery-ui
+//= require rangy-core
+//= require hallo
 //= require_tree .

@@ -11,6 +11,19 @@ class CoffeeStory extends CoffeeChap
     
     story1: ->
         alert "momoken is god"
+    
+    story2: ->
+        $('.editable').each ->
+            $(this).hallo
+                plugins:
+                    halloformat: {}
+                    halloblock: {}
+                    hallojustify: {}
+                    hallolists: {}
+                    halloreundo: {}
+                    hallohtml: {}
+                    hallolink: {}
+                editable: true
 
 class CoffeeAct extends CoffeeStory
     constructor: ->

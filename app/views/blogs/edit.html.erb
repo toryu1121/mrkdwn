@@ -1,6 +1,19 @@
-<h1>Editing Blog</h1>
+<h1>hallo Blog</h1>
 
-<%= render 'form' %>
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
 
-<%= link_to 'Show', @blog %> |
+<p>
+  <strong>Day:</strong>
+  <%= @blog.day %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @blog.text %>
+</p>
+
+
 <%= link_to 'Back', blogs_path %>

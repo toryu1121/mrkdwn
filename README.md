@@ -14,3 +14,4 @@
     - ごちゃごちゃバージョンブランチhallo
 - halloをhallo_btnとしてまとめました 
 - hallo_scaffoldingの作成
+- これでOKですと思う

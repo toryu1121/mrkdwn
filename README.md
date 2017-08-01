@@ -13,4 +13,4 @@
 - ボタンで取得するやつ
     - ごちゃごちゃバージョンブランチhallo
 - halloをhallo_btnとしてまとめました 
-- git scaffoldingの作成
+

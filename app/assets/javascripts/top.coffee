@@ -7,25 +7,8 @@ class CoffeeChap
         
     update: =>
         alert "update is god"
-        
-        #ちゃんと表示されている
         alert $('#edi').text()
         alert $('#post-content').html()
-        
-        #わかったクリックで読みこみ
-        ゃいいのよ
-        
-        @title = $('#edi').text()
-        @content = $('#post-content').html()
-        $.ajax
-            type: "PUT"
-            url: window.location.pathname + '.json'
-            contentType: 'application/json'
-            data: JSON.stringify
-                title: @title
-                content: @content
-            success: ->
-                alert 'Update'    
 
 class CoffeeStory extends CoffeeChap
     constructor: ->
@@ -35,75 +18,40 @@ class CoffeeStory extends CoffeeChap
         alert "momoken is god"
     
     story2: ->
-        $('.editable').each ->
-            $(this).hallo
-                plugins:
-                    halloformat: {}
-                    halloblock: {}
-                    hallojustify: {}
-                    hallolists: {}
-                    halloreundo: {}
-                    hallohtml: {}
-                    hallolink: {}
-                editable: true
-    
-    story3: ->
-        $('.editable').each ->
-            $(this).hallo
-                plugins:
-                    halloformat: {}
-                    halloblock: {}
-                    hallojustify: {}
-                    hallolists: {}
-                    halloreundo: {}
-                    hallohtml: {}
-                    hallolink: {}
-                toolbar: 'halloToolbarFixed'
-                editable: true
-    
-    story4: ->
-        $('.editable').hallo
-            plugins:
-                halloformat: {}
-                halloblock: {}
-                hallojustify: {}
-                hallolists: {}
-                halloreundo: {}
-                hallohtml: {}
-                hallolink: {}
-            toolbar: 'halloToolbarFixed'
-    
-    story5: ->
-        $('div#title').hallo()
-        
-        $('#edi').hallo
-            plugins:
-                halloformat: {}
-                halloblock: {}
-                hallojustify: {}
-                hallolists: {}
-                halloreundo: {}
-                hallohtml: {}
-                hallolink: {}
-            toolbar: 'halloToolbarFixed'
-
-        $('#text').hallo()
-    
-    story6: ->
-        alert "story6"
-        $('#edi').bind "hallodeactivated" , this.update()
-   
-              
-    story7: ->
         $("#btn").click =>
             alert "test"
+    
+    story3: ->
+        $('#title').hallo()
         
-    story8: ->
+        $('#edi').hallo()
+
+    
+    story4: ->
+        $('#title').hallo()
+        
+        $('#text').hallo
+            plugins:
+                halloformat: {}
+                halloblock: {}
+                hallojustify: {}
+                hallolists: {}
+                halloreundo: {}
+                hallohtml: {}
+                hallolink: {}
+            toolbar: 'halloToolbarFixed'
+   
+              
+    story5: ->
         $("#btn").click =>
-            @editext = $('#edi').text()
-            @edihtml = $('#edi').html()
+            @editext = $('#text').text()
+            @edihtml = $('#text').html()
             alert @editext
-            alert @edihtml
+            alert @edihtml        
+
+        
+    story6: ->
+
             
         
         
@@ -112,10 +60,11 @@ class CoffeeStory extends CoffeeChap
 class CoffeeAct extends CoffeeStory
     constructor: ->
         super
-        this.story1()
+        #this.story1()
+        this.story4()
         this.story5()
         #this.story6()
-        this.story8()
+        #this.story8()
 
 $ ->
     new CoffeeAct

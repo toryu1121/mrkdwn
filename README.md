@@ -13,4 +13,9 @@
 - ボタンで取得するやつ
     - ごちゃごちゃバージョンブランチhallo
 - halloをhallo_btnとしてまとめました 
+<<<<<<< HEAD
 
+=======
+- hallo_scaffoldingの作成
+- これでOKですと思う
+>>>>>>> hallo_scaffolding

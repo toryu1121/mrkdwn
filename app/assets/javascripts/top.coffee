@@ -51,8 +51,19 @@ class CoffeeStory extends CoffeeChap
 
         
     story6: ->
-
-            
+        $('#text').hallomodified =>
+            alert "hallomodified"
+        
+        alert "hallomodified"
+    
+    story7: ->
+        $('#text').hallo
+            plugins:
+                halloformat: {}
+                halloheadings: {}
+            toolbar: 'halloToolbarFixed'
+        $('#text').on "hallomodified", alert "ok"
+                
         
         
         
@@ -61,9 +72,9 @@ class CoffeeAct extends CoffeeStory
     constructor: ->
         super
         #this.story1()
-        this.story4()
+        #this.story4()
         this.story5()
-        #this.story6()
+        this.story7()
         #this.story8()
 
 $ ->
